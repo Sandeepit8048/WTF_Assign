@@ -48,11 +48,7 @@ function Modulei() {
 
                 {/* ✅ Status Color */}
                 <td
-                  className={`px-4 py-2 border font-semibold ${
-                    item.status === "active"
-                      ? "text-blue-600"
-                      : "text-gray-500"
-                  }`}
+                  className="px-4 py-2 border font-semibold text-blue-700"
                 >
                   {item.status}
                 </td>
