@@ -3,7 +3,7 @@ import { NavLink, Routes, Route } from "react-router-dom";
 import Modulei from "./Modulei";
 import Moduleii from "./Moduleii";
 import Moduleiii from "./Moduleiii";
-import Moduleiv from "./Moduleiv";
+
 
 function Navbar() {
   
@@ -48,16 +48,6 @@ function Navbar() {
           Module III
         </NavLink>
 
-        <NavLink
-          to="/module4"
-          className={({ isActive }) =>
-            `px-4 py-2 rounded text-white ${
-              isActive ? "bg-red-700" : "bg-red-500"
-            }`
-          }
-        >
-          Module IV
-        </NavLink>
 
       </div>
 
@@ -66,7 +56,7 @@ function Navbar() {
         <Route path="/" element={<Modulei />} />
         <Route path="/module2" element={<Moduleii />} />
         <Route path="/module3" element={<Moduleiii />} />
-        <Route path="/module4" element={<Moduleiv />} />
+     
       </Routes>
     </>
   );

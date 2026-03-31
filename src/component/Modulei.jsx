@@ -4,7 +4,7 @@ function Modulei() {
   const [data, setData] = useState([]);
 
   async function fetchdata() {
-    const res = await fetch('http://localhost:4000/status');
+    const res = await fetch('https://wtf-assign-1.onrender.com/status');
     const updata = await res.json();
     setData(updata);
   }
