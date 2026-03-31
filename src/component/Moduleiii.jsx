@@ -43,12 +43,11 @@ function Moduleiii() {
                 <td className="px-4 py-2 border">{item.member_id}</td>
                 <td className="px-4 py-2 border">{item.gym_id}</td>
                 <td className="px-4 py-2 border">{item.checked_in}</td>
-                <td className="px-4 py-2 border">{item.checked_out}</td>
                 {/* ✅ Status Color */}
                 <td
                   className="px-4 py-2 border font-semibold text-blue-700"
                 >
-                  {item.status}
+                  {item.checked_out}
                 </td>
               </tr>
             ))}
